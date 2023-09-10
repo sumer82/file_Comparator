@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>File and Folder Comparison</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div id="form" style="display:block">
+      <h1>File and Folder Comparison</h1>
+      <form id="compare_form">
+        <label for="folderPath1">Folder Path 1:</label>
+        <input type="text" id="folderPath1" />
+        <br />
+        <label for="folderPath2">Folder Path 2:</label>
+        <input type="text" id="folderPath2" />
+        <br />
+        <button id="compareButton" type="submit">Compare</button>
+      </form>
+    </div>
+
+    <ul class="box-info" id="box" style="display: none;">
+      <li>
+        <i class="bx bxs-calendar-check"></i>
+        <span class="text">
+          <h3 id="same"></h3>
+          <p id="same_p"></p>
+        </span>
+      </li>
+      <li>
+        <i class="bx bxs-group"></i>
+        <span class="text">
+          <h3 id="notPresentIn1"></h3>
+          <p id="same_d"></p>
+        </span>
+      </li>
+      <li>
+        <i class="bx bxs-dollar-circle"></i>
+        <span class="text">
+          <h3 id="notPresentIn2"></h3>
+          <p id="same_d2"></p>
+        </span>
+      </li>
+    </ul>
+    <div id="content" style="display: none">
+      <div class="container">
+        <div class="column" id="column1">
+          <h2>Directory 1 Files:</h2>
+          <ul></ul>
+        </div>
+        <div class="column" id="column2">
+          <h2>Directory 2 Files:</h2>
+          <ul></ul>
+        </div>
+      </div>
+
+      <button id="compareButton2">Compare</button>
+    </div>
+    <div id="comparisonResults" style="display: none"></div>
+
+    <script src="scripts.js"></script>
+  </body>
+</html>

@@ -1,0 +1,167 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
+  margin: 0;
+  padding: 0;
+}
+#form {
+  margin-top: 20%;
+}
+
+h1 {
+  text-align: center;
+  color: #333;
+}
+
+form {
+  max-width: 400px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 5px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+}
+
+label {
+  display: block;
+  font-weight: bold;
+}
+
+input[type="text"] {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 20px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+}
+
+button {
+  background-color: #007bff;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 3px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+  background-color: #007bff;
+  color: #fff;
+}
+
+.result-box {
+  background-color: #fff;
+  padding: 10px;
+  border: 2px solid #007bff;
+  border-radius: 5px;
+  text-align: center;
+}
+
+.container {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+}
+
+.column {
+  flex: 1;
+  background-color: #fff;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+li {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.box-info {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  grid-gap: 24px;
+  margin-top: 36px;
+}
+.box-info li {
+  padding: 24px;
+  background: #f9f9f9;
+  border-radius: 20px;
+  display: flex;
+  align-items: center;
+  grid-gap: 24px;
+}
+.box-info li .bx {
+  width: 80px;
+  height: 80px;
+  border-radius: 10px;
+  font-size: 36px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.box-info li:nth-child(1) .bx {
+  background: #cfe8ff;
+  color: #3c91e6;
+}
+.box-info li:nth-child(2) .bx {
+  background: #fff2c6;
+  color: #ffce26;
+}
+.box-info li:nth-child(3) .bx {
+  background: #ffe0d3;
+  color: #fd7238;
+}
+.box-info li .text h3 {
+  font-size: 24px;
+  font-weight: 600;
+  color: #342e37;
+}
+.box-info li .text p {
+  color: #342e37;
+}
+#compareButton2 {
+  margin-left: 85%;
+}
+
+/* Style for mismatched data */
+.mismatched {
+  color: rgb(0, 0, 0); /* Red text color */
+  background-color:#ffe0d3; /* Background color */
+  padding: 5px;
+  margin-bottom: 10px;
+}
+
+/* Style for the two-column layout */
+.file-container {
+  border: 1px solid #ccc;
+  margin-bottom: 10px;
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  justify-content:space-around;
+}
+.file-header {
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+.file-differences {
+  margin-top: 5px;
+}
+#comparisonResults{
+     margin: 10px;
+}
